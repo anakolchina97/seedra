@@ -6,22 +6,8 @@
  */
 
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import { createGlobalStyle } from "styled-components"
-
-const theme = {
-  colors: {
-    white: "#ffffff",
-    black: "#121720",
-  },
-  breakpoints: {},
-}
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    background: ${props => props.theme.colors.white};
-  }
-`
+import theme from "../styles/theme"
+import GlobalStyle from "../styles/GlobalStyle"
 
 const Layout = ({ children }) => {
   return (
